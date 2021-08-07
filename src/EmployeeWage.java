@@ -5,6 +5,7 @@ public class EmployeeWage {
 
         //  is_Full_Time_Present = 1;
         //  is_Part_Time_Present = 2;
+        int emp_Working_day_Per_Month = 20;
         int emp_Wage_Per_hrs = 20;
         int emp_Working_Hrs = 0;
         int empCheck = (int)(Math.floor(Math.random() * 10) % 3);
@@ -23,7 +24,7 @@ public class EmployeeWage {
             break;
         }
 
-        int Salary = emp_Wage_Per_hrs * emp_Working_Hrs;
-        System.out.println("Salary = " + Salary);
+        int Salary = emp_Working_day_Per_Month * emp_Wage_Per_hrs* emp_Working_Hrs;
+        System.out.println("Salary for month = " + Salary);
     }
 }
