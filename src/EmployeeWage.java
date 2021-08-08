@@ -10,10 +10,11 @@ public class EmployeeWage {
         int emp_Working_Hrs = 0;
         int empCheck = (int)(Math.floor(Math.random() * 10) % 3);
 
-        switch (empCheck) {
+       switch (empCheck) {
             case 1:
                 System.out.println("Employee is Full Time Present");
                 emp_Working_Hrs = 8;
+                emp_Working_day_Per_Month = 12;                     //Working day 13 exceeds 100 Hrs working limit
             break;
             case 2:
                 System.out.println("Employee is Part Time Present");
